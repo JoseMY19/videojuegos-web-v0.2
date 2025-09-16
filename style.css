@@ -1,0 +1,165 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #121212;
+    color: #fff;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #1f1f1f;
+    position: sticky;
+    top: 0;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* Portada */
+.portada {
+    text-align: center;
+    padding: 80px 20px;
+    background: url("img/portada.jpg") no-repeat center center/cover;
+}
+
+.portada h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.portada p {
+    margin-bottom: 20px;
+}
+
+.portada button {
+    padding: 10px 20px;
+    background: #ff9800;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.portada button:hover {
+    background: #e68900;
+}
+
+/* Juegos */
+.juegos {
+    padding: 50px 20px;
+}
+
+.juegos h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1f1f1f;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Noticias */
+.noticias {
+    padding: 50px 20px;
+    background: #181818;
+}
+
+.noticias h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.noticias article {
+    margin-bottom: 20px;
+}
+
+/* Contacto */
+.contacto {
+    padding: 50px 20px;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+.contacto input, 
+.contacto textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contacto button {
+    padding: 10px;
+    background: #ff9800;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1f1f1f;
+    margin-top: 30px;
+}
